@@ -37,9 +37,6 @@
               своя жизнь
             </p>
           </div>
-          <div class="reason__picture">
-            <img src="" alt="" width="800" height="600">
-          </div>
 
           <div class="reason__opportunity">
             <h2 class="reason__name">Жильё</h2>
@@ -66,9 +63,6 @@
           </div>
 
           <!--вторая-->
-          <div class="reason__picture">
-            <img src="" alt="" width="800" height="600">
-          </div>
           <div class="mainReason">
             <h2 class="reason__name">Там есть мост дьявола</h2>
             <div class="reason__number">№2</div>
@@ -129,42 +123,42 @@
           и мы покажем вам лучшие предложения гостиниц с седоне
         </p>
         <a href="search.html" class="booking__search">Поиск гостиницы в седоне</a>
+        <form class="booking__form" action="index.html" method="post">
+          <div class="booking__form__string">
+            <label class="booking__form__label" for="from">Дата заезда:</label>
+            <input class="booking__form__field" type="text" id="from" name="from">
+          </div>
+          <div class="booking__form__string">
+            <label class="booking__form__label" for="to">Дата выезда:</label>
+            <input class="booking__form__field" type="text" id="to" name="to">
+          </div>
+          <div class="booking__form__string">
+            <div class="booking__form__string2">
+              <label class="booking__form__label" for="quantity1">Взрослые</label>
+              <div class="qunatity">
+                <span class="sign">-</span>
+                <input class="quntity__field" type="text" id="quantity1" name="adults" placeholder="2" required>
+                <span class="sign">+</span>
+              </div>
+            </div>
+          <div class="booking__form__string2">
+            <label class="booking__form__label"for="quantity2">Дети</label>
+            <div class="qunatity">
+              <span class="sign">-</span>
+              <input class="quntity__field" type="text" id="quantity2" name="children" placeholder="0" required>
+              <span class="sign">+</span>
+            </div>
+          </div>
+          </div>
+          <button class="booking__button" type="button" name="booking button">Найти</button>
+        </form>
+
       </div>
 
       <div class="map">
         <div class="map__struckture">Карта</div>
       </div>
-
-      <form class="booking__form" action="index.html" method="post">
-        <div class="booking__form__string">
-          <label class="booking__form__label" for="from">Дата заезда:</label>
-          <input class="booking__form__field" type="text" id="from">
-        </div>
-        <div class="booking__form__string">
-          <label class="booking__form__label" for="to">Дата выезда:</label>
-          <input class="booking__form__field" type="text" id="to">
-        </div>
-        <div class="booking__form__string">
-          <div class="booking__form__string2">
-            <label class="booking__form__label" for="quantity1">Взрослые</label>
-            <div class="qunatity">
-              <button class="quantity__button">Минус</button>
-              <input class="quntity__field" type="text" id="quantity1">
-              <button class="quantity__button">Плюс</button>
-            </div>
-          </div>
-        <div class="booking__form__string2">
-          <label class="booking__form__label"for="quantity2">Дети</label>
-          <div class="qunatity">
-            <button class="quantity__button">Минус</button>
-            <input class="quntity__field" type="text" id="quantity2">
-            <button class="quantity__button">Плюс</button>
-          </div>
-        </div>
-        </div>
-        <button class="booking__button" type="button" name="booking button">Найти</button>
-      </form>
-
+      
     </main>
 
     <footer class="sedona__footer">

@@ -19,28 +19,28 @@
 
     <main>
       <div class="filter">
-        ?????<form class="" action="" method="">
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="firlter__column">
             <legend>Инфрастуктура</legend>
-            <input type="checkbox" for="pool" checked>
+            <input type="checkbox" for="pool" name="pool" checked>
             <label for="pool">Бассейн</label>
 
-            <input type="checkbox" for="parking">
+            <input type="checkbox" for="parking" name="parking">
             <label for="parking">Парковка</label>
 
-            <input type="checkbox" for="wi-fi">
+            <input type="checkbox" for="wi-fi" name="wi-fi">
             <label for="wi-fi">Wi-Fi</label>
           </fieldset>
 
           <fieldset class="firlter__column">
             <legend>Тип жилья</legend>
-            <input type="checkbox" for="hotels" checked>
+            <input type="checkbox" for="hotels" name="hotels" checked>
             <label for="hotels">Гостиница</label>
 
-            <input type="checkbox" for="motel" checked>
+            <input type="checkbox" for="motel" name="motel" checked>
             <label for="motel">Мотель</label>
 
-            <input type="checkbox" for="apart" checked>
+            <input type="checkbox" for="apart" name="apart" checked>
             <label for="apart">Апартаменты</label>
           </fieldset>
 
@@ -50,11 +50,11 @@
                 <div class="scope__field">
                   <div class="scope__field__price">
                     <label for="scope1">От</label>
-                    <input type="text" id="scope1">
+                    <input type="text" id="scope1" name="pricemin">
                   </div>
                   <div class="scope__field__price">
                     <label for="scope2">До</label>
-                    <input type="text" id="scope2">
+                    <input type="text" id="scope2" name="pricemax">
                   </div>
                 </div>
                 <div class="scope__adjust">
@@ -70,7 +70,10 @@
 
       <div class="search__result">
         <ul class="search__result__parametrs">
+          <div>
           <li class="search__var"><p class="search__found">Найдено 3:</p></li>
+          </div>
+          <div>
           <li class="search__var">Сортировка:</li>
           <li class="search__var"><a href="#" class="search__result__link active">По цене</a></li>
           <li class="search__var"><a href="#" class="search__result__link">По типу</a></li>
@@ -79,9 +82,11 @@
             <a href="#" class="search__result__scroll"><svg></svg></a>
             <a href="#" class="search__result__scroll"><svg></svg></a>
           </li>
+          </div>
         </ul>
       </div>
 
+      <div class="list">
       <div class="hotel">
         <div class="hotel__photo">
           <img src="" alt="" width="200" height="100">
@@ -127,7 +132,7 @@
             Звезда
           </div>
           <div class="hotel__rating">
-            Рейтинг:8,9
+            Рейтинг:9,2
           </div>
         </div>
       </div>
@@ -156,7 +161,7 @@
           </div>
         </div>
       </div>
-
+    </div>
     </main>
 
     <footer class="sedona__footer">
