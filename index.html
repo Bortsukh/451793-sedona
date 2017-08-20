@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header class="main__header">
@@ -10,7 +12,7 @@
         <ul class="main__navigation__list">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и Видео</a></li>
-          <li><img src="img/index-logo.svg" width="67" height="56" alt="Логотип сайта Седона"></li>
+          <li><img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона"></li>
           <li><a href="#">Карта Штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
@@ -19,26 +21,30 @@
 
     <main>
       <div class="main__image">
-        <img src="img/top-view.jpg" alt="Sedona" width="1200" height="570">
+        <img src="img/top__photo.jpg" alt="Sedona" width="1200" height="510">
       </div>
 
       <article class="reason">
-        <h1 class="reason__title">Седона-небольшой городокв Аризоне, заслуживающий большего!</h1>
+        <h1 class="reason__title">Седона-небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p class="reason__description">Рассмотрим 5 причин,по которым Седона круче, чем гранд каньон</p>
 
         <div class="reasons__list">
             <!--первая-->
-          <div class="mainReason">
-            <h2 class="reason__name">Настоящий городок</h2>
-            <div class="reason__number">№1</div>
-            <p class="reason__expalnation">
-              Седона-не аторакцион
-              для туристов,там течет
-              своя жизнь
-            </p>
-          </div>
+          <div class="mainReason1">
+            <div class="mainReason_blue">
+              <h2 class="reason__name">Настоящий городок</h2>
+              <div class="reason__number">№1</div>
+              <p class="reason__expalnation">
+              Седона-не аторакцион для туристов.
+              Там течет своя жизнь
+              </p>
+            </div>
+        </div>
 
           <div class="reason__opportunity">
+            <div class="reason__house">
+              <img src="img/icon-1.svg" alt="House" width="75" height="72">
+            </div>
             <h2 class="reason__name">Жильё</h2>
             <p class="reason__explanation">
               Рекомендуем пожить в настоящем
@@ -47,6 +53,9 @@
           </div>
 
           <div class="reason__opportunity">
+            <div class="reason__food">
+              <img src="img/icon-3.svg" alt="Food" width="74" height="70">
+            </div>
             <h2 class="reason__name">Еда</h2>
             <p class="reason__explanation">
               Всегда заказывайте фирменный бургер,
@@ -55,6 +64,9 @@
           </div>
 
           <div class="reason__opportunity">
+            <div class="reason__gift">
+              <img src="img/icon-2.svg" alt="Gift" width="64" height="76">
+            </div>
             <h2 class="reason__name">Сувениры</h2>
             <p class="reason__explanation">
               Не только китайского, но и местного
@@ -63,7 +75,8 @@
           </div>
 
           <!--вторая-->
-          <div class="mainReason">
+          <div class="mainReason2">
+            <div class="mainReason__blue">
             <h2 class="reason__name">Там есть мост дьявола</h2>
             <div class="reason__number">№2</div>
             <p class="reason__expalnation">
@@ -71,6 +84,7 @@
               Пройти! Если конечно
               вы осмелитесь
             </p>
+          </div>
           </div>
         </div>
 
@@ -123,7 +137,7 @@
           и мы покажем вам лучшие предложения гостиниц с седоне
         </p>
         <a href="search.html" class="booking__search">Поиск гостиницы в седоне</a>
-        <form class="booking__form" action="index.html" method="post">
+        <form class="booking__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="booking__form__string">
             <label class="booking__form__label" for="from">Дата заезда:</label>
             <input class="booking__form__field" type="text" id="from" name="from">
@@ -150,15 +164,16 @@
             </div>
           </div>
           </div>
-          <button class="booking__button" type="button" name="booking button">Найти</button>
+          <button class="booking__button" type="submit">Найти</button>
         </form>
 
       </div>
 
       <div class="map">
         <div class="map__struckture">Карта</div>
+        <img src="img/map.jpg" width="1200" height="594" alt="Map">
       </div>
-      
+
     </main>
 
     <footer class="sedona__footer">
@@ -167,16 +182,16 @@
       </div>
 
       <div class="social">
-        <a href="#" class="social__button">Твиттер</a>
-        <a href="#" class="social__button">Фейсбук</a>
-        <a href="#" class="social__button">Ютуб</a>
+        <a href="#" class="social__button"><img src="img/t.svg" alt="twit" width="17" height="17"> Твиттер</a>
+        <a href="#" class="social__button"><img src="img/fb-icon.svg" alt="facebook" width="12" height="22">Фейсбук</a>
+        <a href="#" class="social__button"><img src="img/youtube.svg" alt="youtube" width="20" height="16"> Ютуб</a>
       </div>
 
       <div class="copyright">
           <p>Website</p>
           <div>
             <a href="#" class="link_to_academy">
-              <img src="" alt="logo of academy" width="100" height="50">
+              <img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона">
             </a>
         </div>
       </div>

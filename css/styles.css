@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
+
+.mainReason1{
+  background: url("../img/main__reason1.jpg")
+}
+
+.mainReason2{
+  background: url("../img/main__reason2.jpg")
+}
+
+.filter{
+  background: url("../img/filter background.jpg")
+}
+
+
+.main__navigation__list a{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 26px;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.reason__title h1{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 26px;
+  font-size: 21px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.reason__description {
+  font-family: 'PT Sans', sans-serif;
+  line-height: 26px;
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.mainReason__blue reason__name{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 21px;
+  font-size: 21px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.mainReason__blue reason__number{
+  font-family: 'PT Sans', sans-serif;
+  line-height: 21px;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.mainReason__blue reason__explanation{
+  font-family: 'PT Sans', sans-serif;
+  line-height: 21px;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.reason__opportunity reason__name{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 21px;
+  font-size: 21px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+
+.reason__opportunity reason__explanation{
+  font-family: 'PT Sans', sans-serif;
+  line-height: 21px;
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.reason__greycolor reason__name{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 21px;
+  font-size: 21px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.reason__greycolor reason__number,
+.reason__greycolor reason__explanation{
+  font-family: 'PT Sans', sans-serif;
+  line-height: 21px;
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+
+
+.reason__greycolor reason__explanation{
+  font-family: 'PT Sans', sans-serif;
+  line-height: 21px;
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.filter__column legend{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 21px;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.filter__column{
+  font-family: 'PT Sans', sans-serif;
+  line-height: 21px;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.found{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 26px;
+  font-size: 21px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.sort{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 18px;
+  font-size: 12px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.search__result__link active a{
+  font-family: 'PT Sans', sans-serif;
+  line-height: 18px;
+  font-size: 12px;
+  color: #81b3d2;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.search__result__link a{
+  font-family: 'PT Sans', sans-serif;
+  line-height: 18px;
+  font-size: 12px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.hotel__name{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 26px;
+  font-size: 21px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.kind__hotels, price{
+  font-family: 'PT Sans', sans-serif;
+  line-height: 21px;
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.blue__link{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 21px;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.brown__link{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 21px;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
