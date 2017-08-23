@@ -9,7 +9,7 @@
 }
 
 .filter{
-  background: url("../img/filter background.jpg")
+  background: url("../img/filter__background.jpg")
 }
 
 
@@ -40,7 +40,7 @@
   text-transform: uppercase;
 }
 
-.mainReason__blue reason__name{
+.reason__name{
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   line-height: 21px;
@@ -49,7 +49,7 @@
   text-transform: uppercase;
 }
 
-.mainReason__blue reason__number{
+.reason__number{
   font-family: 'PT Sans', sans-serif;
   line-height: 21px;
   font-size: 14px;
@@ -57,7 +57,7 @@
   text-transform: uppercase;
 }
 
-.mainReason__blue reason__explanation{
+.reason__explanation{
   font-family: 'PT Sans', sans-serif;
   line-height: 21px;
   font-size: 14px;
@@ -65,7 +65,7 @@
   text-transform: uppercase;
 }
 
-.reason__opportunity reason__name{
+.opportunity__name{
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   line-height: 21px;
@@ -75,7 +75,7 @@
 }
 
 
-.reason__opportunity reason__explanation{
+.explanation__grey{
   font-family: 'PT Sans', sans-serif;
   line-height: 21px;
   font-size: 14px;
@@ -83,7 +83,7 @@
   text-transform: uppercase;
 }
 
-.reason__greycolor reason__name{
+.reason__name--grey{
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   line-height: 21px;
@@ -92,8 +92,8 @@
   text-transform: uppercase;
 }
 
-.reason__greycolor reason__number,
-.reason__greycolor reason__explanation{
+.reason__number--greycolor,
+.reason__explanation--grey{
   font-family: 'PT Sans', sans-serif;
   line-height: 21px;
   font-size: 14px;
@@ -101,15 +101,6 @@
   text-transform: uppercase;
 }
 
-
-
-.reason__greycolor reason__explanation{
-  font-family: 'PT Sans', sans-serif;
-  line-height: 21px;
-  font-size: 14px;
-  color: #000;
-  text-transform: uppercase;
-}
 
 .filter__column legend{
   font-family: 'PT Sans', sans-serif;
@@ -146,7 +137,7 @@
   text-transform: uppercase;
 }
 
-.search__result__link active a{
+.search__result__link--active a{
   font-family: 'PT Sans', sans-serif;
   line-height: 18px;
   font-size: 12px;
@@ -172,7 +163,7 @@
   text-transform: uppercase;
 }
 
-.kind__hotels, price{
+.kind__hotels, .price{
   font-family: 'PT Sans', sans-serif;
   line-height: 21px;
   font-size: 14px;
@@ -196,4 +187,12 @@
   font-size: 14px;
   color: #fff;
   text-transform: uppercase;
+}
+
+.visually-hidden{
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }

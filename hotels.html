@@ -2,7 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Sedona</title>
+    <title>hotels</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header class="main__header">
@@ -10,7 +12,7 @@
         <ul class="main__navigation__list">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и Видео</a></li>
-          <li><a href="index.html"><img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона"></a></li>
+          <li><a href="index.html"><img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона"><span class="visually-hidden">Переход на стартовую страницу</span></a></li>
           <li><a href="#">Карта Штата</a></li>
           <li class="main__navigation__current"><a>Гостиницы</a></li>
         </ul>
@@ -21,7 +23,7 @@
       <div class="filter">
       <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="firlter__column">
-            <legend>Инфрастуктура</legend>
+            <legend>Инфраструктура</legend>
             <input type="checkbox" for="pool" name="pool" checked>
             <label for="pool">Бассейн</label>
 
@@ -62,12 +64,11 @@
                     Ползунок
                   </div>
                 </div>
-                 <button type="submit" class="scope__adjust__button">Покать</button>
+                 <button type="submit" class="scope__adjust__button">Показать</button>
               </div>
           </fieldset>
         </form>
-        <img src="img/icon-up-dir.svg" alt="House" width="11" height="10">
-        <img src="img/icon-down-dir.svg" alt="House" width="11" height="10">
+
       </div>
 
       <div class="search__result">
@@ -77,27 +78,25 @@
           <li class="search__var"><a href="#" class="search__result__link active">По цене</a></li>
           <li class="search__var"><a href="#" class="search__result__link">По типу</a></li>
           <li class="search__var"><a href="#" class="search__result__link">По рейтингу</a></li>
-          <li class="search__var">
-            <a href="#" class="search__result__scroll"><svg></svg></a>
-            <a href="#" class="search__result__scroll"><svg></svg></a>
-          </li>
           </div>
         </ul>
+        <a href="#" class="scroll__hotels"><img src="img/icon-up-dir.svg" alt="scroll up" width="11" height="10"><span class="visually-hidden">Прокрутка по списку отелей вверх</span></a>
+        <a href="#" class="scroll__hotels"><img src="img/icon-down-dir.svg" alt="scroll down" width="11" height="10"><span class="visually-hidden">Прокрутка по списку отелей вниз</span></a>
       </div>
 
       <div class="list">
       <div class="hotel">
         <div class="hotel__photo">
-          <img src="img/Amara resort & spa.jpg" alt="Amara resort & spa" width="135" height="90">
+          <img src="img/Amara__resort__and__spa.jpg" alt="Amara resort and spa" width="135" height="90">
         </div>
         <div class="hotel__description">
-          <p class="hotel__name">Amara resort & spa</p>
+          <p class="hotel__name"><a href="#">Amara resort & spa</a></p>
           <div class="hotel__description_full">
             <span class="kind__hotels">Гостиница</span>
             <a href="#" class="blue_link">Подробнее</a>
           </div>
           <div class="hotel__description_full">
-            <span>от 3500 Р.</span>
+            <span class="price">от 3500 Р.</span>
             <a href="#" class="brown_link">Забронировать</a>
           </div>
         </div>
@@ -114,16 +113,16 @@
 
       <div class="hotel">
         <div class="hotel__photo">
-          <img src="img/Desert Quail INN.jpg" alt="Amara resort & spa" width="135" height="90">
+          <img src="img/Desert__Quail__INN.jpg" alt="Amara resort & spa" width="135" height="90">
         </div>
         <div class="hotel__description">
-          <p class="hotel__name">Desert Quail INN</p>
+          <p class="hotel__name"><a href="#">Desert Quail INN</a></p>
           <div class="hotel__description_full">
             <span class="kind__hotels">Мотель</span>
             <a href="#" class="blue_link">Подробнее</a>
           </div>
           <div class="hotel__description_full">
-            <span>от 2000 Р.</span>
+            <span class="price">от 2000 Р.</span>
             <a href="#" class="brown_link">Забронировать</a>
           </div>
         </div>
@@ -140,16 +139,16 @@
 
       <div class="hotel">
         <div class="hotel__photo">
-          <img src="img/Villas at poco diablo.jpg" alt="Amara resort & spa" width="135" height="90">
+          <img src="img/Villas__at__poco__diablo.jpg" alt="Amara resort & spa" width="135" height="90">
         </div>
         <div class="hotel__description">
-          <p class="hotel__name">Villas at poco diablo</p>
+          <p class="hotel__name"><a href="#">Villas at poco diablo</a></p>
           <div class="hotel__description_full">
             <span class="kind__hotels">Апартаменты</span>
             <a href="#" class="blue_link">Подробнее</a>
           </div>
           <div class="hotel__description_full">
-            <span>от 4000 Р.</span>
+            <span class="price">от 4000 Р.</span>
             <a href="#" class="brown_link">Забронировать</a>
           </div>
         </div>
@@ -168,22 +167,24 @@
 
     <footer class="sedona__footer">
       <div class="hashtag">
-        <a href="#">#visitsedona</a>
+        <a href="#">#visitsedona<span class="visually-hidden">Поиск по хештегу визитседона</span>></a>
       </div>
 
-      <div class="social">
-        <a href="#" class="social__button">Твиттер</a>
-        <a href="#" class="social__button">Фейсбук</a>
-        <a href="#" class="social__button">Ютуб</a>
-      </div>
+      <section class="social">
+        <h3 class="visually-hidden">Социальные сети</h3>
+        <a href="#" class="social__button"><img src="img/t.svg" alt="twit" width="17" height="17"><span class="visually-hidden">Твиттер</span></a>
+        <a href="#" class="social__button"><img src="img/fb-icon.svg" alt="facebook" width="12" height="22"><span class="visually-hidden">Фейсбук</span></a>
+        <a href="#" class="social__button"><img src="img/youtube.svg" alt="youtube" width="20" height="16"><span class="visually-hidden">Ютуб</span></a>
+      </section>
 
       <div class="copyright">
-          <p>Website</p>
+          <p>Website by</p>
           <div>
             <a href="#" class="link_to_academy">
-              <img src="" alt="logo of academy" width="115" height="41">
+              <span class="visually-hidden">Ссылка на сайт HTML Academy</span>
+              <img src="img/logo__name.svg" width="115" height="41" alt="logo of academy">
             </a>
-        </div>
+          </div>
       </div>
     </footer>
   </body>
