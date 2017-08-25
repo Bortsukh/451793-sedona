@@ -23,6 +23,13 @@
   text-transform: uppercase;
 }
 
+li{
+  width:20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #fff;
+}
+
 .reason__title h1{
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
@@ -30,6 +37,16 @@
   font-size: 21px;
   color: #000;
   text-transform: uppercase;
+}
+
+.mainReason__blue{
+  width: 400px;
+  min-height: 256px;
+  background-color: rgb(129,179,210);
+  padding-left:45px;
+  padding-right:45px;
+  padding-top:50px;
+  padding-bottom:50px;
 }
 
 .reason__description {
