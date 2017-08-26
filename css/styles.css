@@ -1,18 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
 
-.mainReason1{
-  background: url("../img/main__reason1.jpg")
+html{
+  box-sizing: border-box;
 }
 
-.mainReason2{
-  background: url("../img/main__reason2.jpg")
+*,*::before,*::after{
+  box-sizing: inherit;
+}
+
+.container{
+  width:1200px;
+  margin:0 auto;
+}
+
+.mainReason--normal{
+  background: url("../img/main__reason1.jpg") right center no-repeat #b35f4d;
+}
+
+.mainReason--reverse{
+  background: url("../img/main__reason2.jpg") left center no-repeat #e5b29e;
 }
 
 .filter{
-  background: url("../img/filter__background.jpg")
+  background: url("../img/filter__background.jpg");
 }
 
+.main__navigation__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
 
+.main__navigation__list li{
+  width:20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #fff;
+  text-align: center;
+}
 .main__navigation__list a{
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
@@ -22,31 +48,58 @@
   text-decoration: none;
   text-transform: uppercase;
 }
-
-li{
-  width:20%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #fff;
+.main__navigation__list a:hover{
+  color:#81b3d2;
 }
 
-.reason__title h1{
+.main__navigation__list a:active{
+  color:rgba(0,0,0,0.3);
+}
+
+.main__navigation__current a{
+  color:#766357;
+}
+
+.reason__wrapper{
+  max-width: 490px;
+  margin:60px auto;
+  text-align: center;
+}
+
+.reason__title{
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   line-height: 26px;
   font-size: 21px;
   color: #000;
   text-transform: uppercase;
+  margin-bottom:40px;
+}
+.reasons__list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainReason{
+  width:100%;
+}
+
+.small__blocks{
+  width:33.3333333%;
 }
 
 .mainReason__blue{
   width: 400px;
-  min-height: 256px;
   background-color: rgb(129,179,210);
   padding-left:45px;
   padding-right:45px;
   padding-top:50px;
   padding-bottom:50px;
+  text-align: center;
+}
+
+.mainReason--reverse{
+  padding-left: 800px;
 }
 
 .reason__description {
@@ -80,6 +133,15 @@ li{
   font-size: 14px;
   color: #fff;
   text-transform: uppercase;
+  max-width: 282px;
+}
+
+.reason__opportunity{
+  padding-top: 60px;
+  padding-bottom: 85px;
+  padding-left: 48px;
+  padding-right: 48px;
+  text-align: center;
 }
 
 .opportunity__name{
@@ -91,13 +153,21 @@ li{
   text-transform: uppercase;
 }
 
-
 .explanation__grey{
   font-family: 'PT Sans', sans-serif;
   line-height: 21px;
   font-size: 14px;
   color: #000;
   text-transform: uppercase;
+}
+
+.reason__greycolor{
+  padding-left: 42px;
+  padding-right: 44px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: #eee;
 }
 
 .reason__name--grey{
@@ -118,6 +188,94 @@ li{
   text-transform: uppercase;
 }
 
+.booking__wrapper{
+  max-width: 436px;
+  margin: 57px auto 50px auto;
+  text-align: center;
+}
+
+.booking__name{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 36px;
+  font-size: 30px;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom:38px;
+}
+
+.booking__explanation{
+  font-family: 'PT Sans', sans-serif;
+  line-height: 24px;
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.booking__link{
+  width: 570px;
+  min-height: 86px;
+  background-color:#766357;
+  margin: auto;
+  padding-top: 32px;
+  text-align: center;
+}
+
+.booking__link:hover{
+  background-color:#604e43;
+}
+
+.booking__link:active{
+  background-color: #503e33;
+}
+
+.booking__search{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 26px;
+  font-size: 21px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.booking__search:hover{
+  color:#fff;
+}
+
+.booking__search:active{
+  color:rgba(255, 255, 255, 0.3);
+}
+
+.booking__form{
+  width:570px;
+  padding:55px;
+  background-color: #cecece;
+}
+
+.booking__form__string{
+  border:none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.define__date::after{
+  position: absolute;
+  display: block;
+  content: "";
+  width: 21px;
+  height: 22px;
+  right: 0;
+  top:0;
+  background: url("../img/calendar.svg") center center no-repeat;
+}
+
+.booking__form__label{
+  margin-right: 15px;
+  width: 96px;
+  display: inline-block;
+}
 
 .filter__column legend{
   font-family: 'PT Sans', sans-serif;
