@@ -153,30 +153,32 @@
           <h3 class="visually-hidden">Заполните форму, пожалуйста</h3>
           <fieldset class="booking__form__string define__date">
             <label class="booking__form__label" for="from">Дата заезда:</label>
-            <input class="booking__form__field" type="text" id="from" name="from">
+            <input class="booking__form__field" type="text" id="from" name="from" style="width:345px">
           </fieldset>
           <fieldset class="booking__form__string define__date">
             <label class="booking__form__label" for="to">Дата выезда:</label>
-            <input class="booking__form__field" type="text" id="to" name="to">
+            <input class="booking__form__field" type="text" id="to" name="to" style="width:345px">
           </fieldset>
-          <fieldset class="booking__form__string">
+          <div class="container__for__form">
+          <div class="booking__form__add">
             <div class="booking__form__string2">
-              <label class="booking__form__label" for="quantity1">Взрослые</label>
-              <div class="qunatity">
+              <label class="booking__form__label" for="quantity1">Взрослые:</label>
+              <div class="quantity">
                 <button class="sign">-</button>
-                <input class="quntity__field" type="text" id="quantity1" name="adults" placeholder="2" required>
+                <input class="quantity__field" type="text" id="quantity1" name="adults" placeholder="2" required style="width:37px">
                 <button class="sign">+</button>
               </div>
             </div>
           <div class="booking__form__string2">
-            <label class="booking__form__label" for="quantity2">Дети</label>
-            <div class="qunatity">
+            <label class="booking__form__label" for="quantity2">Дети:</label>
+            <div class="quantity">
               <button class="sign">-</button>
-              <input class="quntity__field" type="text" id="quantity2" name="children" placeholder="0" required>
+              <input class="quantity__field" type="text" id="quantity2" name="children" placeholder="0" required style="width:37px">
               <button class="sign">+</button>
             </div>
           </div>
-        </fieldset>
+        </div>
+        </div>
           <button class="booking__button" type="submit">Найти</button>
         </form>
         </div>
@@ -185,7 +187,7 @@
       <section class="map">
         <div class="container">
         <h3 class="visually-hidden">Как добраться</h3>
-        <div class="map__struckture">Карта</div>
+        <div class="map__struckture visually-hidden">Карта</div>
         <img src="img/map.jpg" width="1200" height="594" alt="Map">
       </div>
       </section>
@@ -194,6 +196,7 @@
 
     <footer class="sedona__footer">
       <div class="container">
+      <div class="footer__flex">
       <div class="hashtag">
         <a href="#">#visitsedona</a>
       </div>
@@ -213,6 +216,7 @@
               <img src="img/logo__name.svg" width="115" height="41" alt="logo of academy">
             </a>
           </div>
+      </div>
       </div>
       </div>
     </footer>

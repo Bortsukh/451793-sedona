@@ -248,9 +248,16 @@ html{
 }
 
 .booking__form{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 26px;
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
   width:570px;
   padding:55px;
   background-color: #cecece;
+  margin: 0 auto;
 }
 
 .booking__form__string{
@@ -275,6 +282,94 @@ html{
   margin-right: 15px;
   width: 96px;
   display: inline-block;
+}
+
+.quantity{
+  display: inline-block;
+}
+/*
+.booking__form__string2{
+  display: inline;
+}
+*/
+.container__for__form{
+  width: 460px;
+  margin: 0 auto;
+}
+.booking__form__add{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.booking__form__string2{
+  width:50%;
+}
+
+.booking__form__label{
+  margin-right: 15px;
+  width: 96px;
+  display: inline-block;
+}
+
+
+
+
+
+.booking__button{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 26px;
+  font-size: 21px;
+  color: #fff;
+  text-transform: uppercase;
+  width:448px;
+  height: 59px;
+  margin-top: 54px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #81b3d2;
+}
+
+.footer__flex{
+  display: flex;
+}
+
+.hashtag{
+  width: 33.333333%;
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 52px;
+  margin-top: 49px;
+}
+
+.hashtag a {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 26px;
+  font-size: 21px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.social{
+  width: 33.333333%;
+  text-align: center;
+  margin: auto;
+  background-color: #fff;
+}
+
+.copyright{
+  width: 33.333333%;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 26px;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .filter__column legend{
