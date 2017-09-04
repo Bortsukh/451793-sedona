@@ -307,14 +307,19 @@ html{
   width:50%;
 }
 
+.booking__form__string2:nth-child(2){
+  padding-left: 52px;
+}
+
+.booking__form__string2:nth-child(2) .booking__form__label{
+   width: 65px;
+}
+
 .booking__form__label{
   margin-right: 15px;
   width: 96px;
   display: inline-block;
 }
-
-
-
 
 
 .booking__button{
@@ -330,9 +335,11 @@ html{
   margin-right: auto;
   margin-left: auto;
   background-color: #81b3d2;
+  border:none;
+  box-shadow: none;
 }
 
-.footer__flex{
+.sedona__footer .container{
   display: flex;
 }
 
@@ -359,6 +366,18 @@ html{
   text-align: center;
   margin: auto;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.social__button{
+  background-color: #81b3d2;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  margin:0 3px;
 }
 
 .copyright{
@@ -370,6 +389,25 @@ html{
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright svg{
+  width: 115px;
+  height: 41px;
+  fill:#000;
+}
+.copyright svg:hover{
+  fill:#81b3d2;
+}
+
+.copyright svg:active{
+  fill:#bdbbbc;
+}
+.copyright p{
+  margin-right: 8px;
 }
 
 .filter__column legend{
