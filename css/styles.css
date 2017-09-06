@@ -274,8 +274,13 @@ html{
   width: 21px;
   height: 22px;
   right: 0;
-  top:0;
+  top:8px;
   background: url("../img/calendar.svg") center center no-repeat;
+  opacity: 0.5;
+}
+
+.define__date:hover::after{
+  opacity:0.1;
 }
 
 .booking__form__label{
@@ -284,14 +289,40 @@ html{
   display: inline-block;
 }
 
+.booking__form__field{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 26px;
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  width: 345px;
+  height: 38px;
+  border:none;
+}
+
+.booking__form__field:hover{
+  background-color: #ebebeb;
+}
+
+.booking__form__field:focus{
+  background-color: #fff;
+}
+
+.booking__form__field::placeholder{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 26px;
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+}
+
 .quantity{
   display: inline-block;
 }
-/*
-.booking__form__string2{
-  display: inline;
-}
-*/
+
 .container__for__form{
   width: 460px;
   margin: 0 auto;
@@ -339,6 +370,15 @@ html{
   box-shadow: none;
 }
 
+.booking__button:hover{
+  background-color: #669ec0;
+}
+
+.booking__button:active{
+  background-color: #5496bc;
+  color:rgba(255, 255, 255, 0.3);
+}
+
 .sedona__footer .container{
   display: flex;
 }
@@ -378,6 +418,15 @@ html{
   width: 46px;
   height: 48px;
   margin:0 3px;
+}
+
+.social__button:hover{
+  background-color: #669ec0;
+}
+/*можно ли поменять цвет у svg через fill без прямого указания */
+.social__button:active{
+  background-color: #5496bd;
+  fill:#88b6d1;
 }
 
 .copyright{
