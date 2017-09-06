@@ -21,8 +21,13 @@ html{
   background: url("../img/main__reason2.jpg") left center no-repeat #e5b29e;
 }
 
+.filter__wrapper{
+  background: url("../img/filter__background.jpg") center center no-repeat #6a727a;
+  background-size: cover;
+}
+
 .filter{
-  background: url("../img/filter__background.jpg");
+  display:flex;
 }
 
 .main__navigation__list{
@@ -267,27 +272,33 @@ html{
   position: relative;
 }
 
-.define__date::after{
-  position: absolute;
-  display: block;
-  content: "";
-  width: 21px;
-  height: 22px;
-  right: 0;
-  top:8px;
-  background: url("../img/calendar.svg") center center no-repeat;
-  opacity: 0.5;
-}
-
-.define__date:hover::after{
-  opacity:0.1;
-}
-
 .booking__form__label{
+  position: relative;
+}
+
+.booking__form__label svg{
+  width:21px;
+  height: 22px;
+  position: absolute;
+  right:9px;
+  top:4px;
+  fill:#cacaca;
+}
+
+.booking__form__label svg:hover{
+  fill:#000;
+}
+
+.booking__form__label svg:active{
+  fill:#81b3d2;
+}
+
+.booking__form__label span{
   margin-right: 15px;
   width: 96px;
   display: inline-block;
 }
+
 
 .booking__form__field{
   font-family: 'PT Sans', sans-serif;
@@ -345,13 +356,6 @@ html{
 .booking__form__string2:nth-child(2) .booking__form__label{
    width: 65px;
 }
-
-.booking__form__label{
-  margin-right: 15px;
-  width: 96px;
-  display: inline-block;
-}
-
 
 .booking__button{
   font-family: 'PT Sans', sans-serif;
@@ -423,10 +427,13 @@ html{
 .social__button:hover{
   background-color: #669ec0;
 }
-/*можно ли поменять цвет у svg через fill без прямого указания */
+
 .social__button:active{
   background-color: #5496bd;
-  fill:#88b6d1;
+}
+
+.social__button:active img{
+  opacity:0.3;
 }
 
 .copyright{
@@ -459,6 +466,17 @@ html{
   margin-right: 8px;
 }
 
+
+
+
+
+
+
+
+
+
+/*стили для второй страницы*/
+
 .filter__column legend{
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
@@ -474,6 +492,16 @@ html{
   font-size: 14px;
   color: #fff;
   text-transform: uppercase;
+  width: 25%;
+  border:none;
+}
+
+.filter__column.price__adjusting{
+  width: 50%;
+}
+
+.filter__column label{
+  display:block;
 }
 
 .found{
@@ -553,3 +581,31 @@ html{
   height: 1px;
   margin: -1px;
 }
+
+
+/*
+label{
+ position: relative;
+padding-left: 20px;
+}
+label::before{
+ position: absolute;
+ content: '';
+ display: block;
+ left: 0;
+ top: 0;
+ width: 23px;
+ height: 23px;
+ border: 2px solid #fff;
+ border-radius: 2px;
+}
+input:checked + label::after{
+ position: absolute;
+ content: 'галочка';
+ display: block;
+ left: 0;
+ top: 0;
+ width: 23px;
+ height: 23px;
+}
+*/

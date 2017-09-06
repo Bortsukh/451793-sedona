@@ -8,6 +8,7 @@
   </head>
   <body>
     <header class="main__header">
+      <div class="container">
       <nav class="main__navigation">
         <ul class="main__navigation__list">
           <li><a href="#">Информация</a></li>
@@ -17,36 +18,38 @@
           <li class="main__navigation__current"><a>Гостиницы</a></li>
         </ul>
       </nav>
+      </div>
     </header>
 
     <main>
-      <div class="filter">
+      <div class="container">
+      <div class="filter__wrapper">
       <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter__column">
             <legend>Инфраструктура</legend>
-            <input type="checkbox" id="pool" name="pool" checked>
+            <input type="checkbox" id="pool" name="pool" checked class="visually-hidden">
             <label for="pool">Бассейн</label>
 
-            <input type="checkbox" id="parking" name="parking">
+            <input type="checkbox" id="parking" name="parking" class="visually-hidden">
             <label for="parking">Парковка</label>
 
-            <input type="checkbox" id="wi-fi" name="wi-fi">
+            <input type="checkbox" id="wi-fi" name="wi-fi" class="visually-hidden">
             <label for="wi-fi">Wi-Fi</label>
           </fieldset>
 
           <fieldset class="filter__column">
             <legend>Тип жилья</legend>
-            <input type="checkbox" id="hotels" name="hotels" checked>
+            <input type="checkbox" id="hotels" name="hotels" checked class="visually-hidden">
             <label for="hotels">Гостиница</label>
 
-            <input type="checkbox" id="motel" name="motel" checked>
+            <input type="checkbox" id="motel" name="motel" checked class="visually-hidden">
             <label for="motel">Мотель</label>
 
-            <input type="checkbox" id="apart" name="apart" checked>
+            <input type="checkbox" id="apart" name="apart" checked class="visually-hidden">
             <label for="apart">Апартаменты</label>
           </fieldset>
 
-          <fieldset class="filter__column">
+          <fieldset class="filter__column price__adjusting">
               <legend>Стоимость за сутки(р):</legend>
               <div class="scope">
                 <div class="scope__field">
@@ -68,8 +71,7 @@
               </div>
           </fieldset>
         </form>
-
-      </div>
+        </div>
 
       <div class="search__result">
         <span class="found">Найдено 3:</span>
@@ -78,7 +80,6 @@
           <li class="search__var"><a href="#" class="search__result__link--active">По цене</a></li>
           <li class="search__var"><a href="#" class="search__result__link">По типу</a></li>
           <li class="search__var"><a href="#" class="search__result__link">По рейтингу</a></li>
-          </div>
         </ul>
         <a href="#" class="scroll__hotels"><img src="img/icon-up-dir.svg" alt="scroll up" width="11" height="10"><span class="visually-hidden">Прокрутка по списку отелей вверх</span></a>
         <a href="#" class="scroll__hotels"><img src="img/icon-down-dir.svg" alt="scroll down" width="11" height="10"><span class="visually-hidden">Прокрутка по списку отелей вниз</span></a>
@@ -162,6 +163,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
     </main>
 
