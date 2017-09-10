@@ -155,7 +155,9 @@ html{
   font-size: 14px;
   color: #fff;
   text-transform: uppercase;
-  max-width: 282px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .reason__opportunity{
@@ -609,12 +611,132 @@ input.quantity__field{
  background: url("../img/checkbox-on.png") right center no-repeat;
 }
 
-.filter__column.price__adjusting{
+/*.filter__column.price__adjusting{
   width: 50%;
 }
-
+*/
 .filter__column label{
   display:block;
+}
+
+.filter__range{
+  font-family: 'PT Sans', sans-serif;
+  width: 330px;
+  margin:50px auto;
+  color:#fff;
+  text-transform: uppercase;
+}
+
+.filter__range__title {
+  margin-bottom: 9px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price__controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price__controls::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+}
+
+
+.price__controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 32px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price__controls .min__price,
+.price__controls .max__price {
+  /*width: 90px;*/
+  padding-left: 65px;
+}
+
+.price__controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range__controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range__controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range__controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range__toggle {
+  position: absolute;
+  top: -7px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range__toggle:hover {
+  background: #1c4f80;
+}
+
+.range__toggle__min {
+  left: 0;
+}
+
+.range__toggle__max {
+  left: 80%;
+}
+
+.btn__price {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn__price:hover {
+  color: #000000;
+  background: #ffffff;
 }
 
 .found{
@@ -727,8 +849,13 @@ a.search__result__link--active{
   margin-left: 30px;
 }
 
+.hotel__description_full{
+  margin-top: 7px;
+}
+
 .hotel__tophotels{
-  width: 114px;
+  width: 110px;
+  flex-shrink: 0;
 }
 
 .hotel__name a{
@@ -751,7 +878,7 @@ a.search__result__link--active{
 
 .hotel__name{
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .kind__hotels, .price{
@@ -760,10 +887,7 @@ a.search__result__link--active{
   font-size: 14px;
   color: #333;
   text-transform: uppercase;
-  width:110px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 0px;
+  margin-right: 39px;
   display: inline-block;
 }
 
@@ -780,6 +904,7 @@ a.search__result__link--active{
   padding-bottom: 5px;
   padding-left: 18px;
   padding-right: 17px;
+  display: block;
 }
 
 .blue__button a:hover{
@@ -787,8 +912,8 @@ a.search__result__link--active{
 }
 
 .blue__button a:active{
-  color:rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
+  color:rgba(255, 255, 255, 0.3);
 }
 
 .brown__button a{
@@ -804,6 +929,7 @@ a.search__result__link--active{
   padding-bottom: 5px;
   padding-left: 18px;
   padding-right: 17px;
+  display: block;
 }
 
 .brown__button a:hover{
@@ -827,9 +953,7 @@ a.search__result__link--active{
   color: #666666;
   text-transform: uppercase;
   background-color: #f2f2f2;
-  padding-left: 16px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding: 3px 13px;
   margin-top: 43px;
 }
 

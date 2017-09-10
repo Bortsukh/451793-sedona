@@ -10,7 +10,9 @@
     <header class="main__header">
       <div class="container">
         <div class="logo">
+          <a href="index.html">
           <img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона">
+          </a>
         </div>
       <nav class="main__navigation">
         <ul class="main__navigation__list">
@@ -51,27 +53,24 @@
             <label for="apart">Апартаменты</label>
           </fieldset>
 
-          <fieldset class="filter__column price__adjusting">
-              <legend>Стоимость за сутки(р):</legend>
-              <div class="scope">
-                <div class="scope__field">
-                  <div class="scope__field__price">
-                    <label for="scope1">От</label>
-                    <input type="text" id="scope1" name="pricemin">
-                  </div>
-                  <div class="scope__field__price">
-                    <label for="scope2">До</label>
-                    <input type="text" id="scope2" name="pricemax">
-                  </div>
-                </div>
-                <div class="scope__adjust">
-                  <div class="scope__adjust__bar">
-                    Ползунок
-                  </div>
-                </div>
-                 <button type="submit" class="scope__adjust__button">Показать</button>
+          <div class="filter__range">
+              <div class="filter__range__title">Стоимость за сутки(р):</div>
+              <div class="price__controls">
+                <label class="min__price">От <input type="text" name="min__price" value="0"></label>
+                <label class="max__price">До <input type="text" name="max__price" value="3000"></label>
               </div>
-          </fieldset>
+              <div class="range__controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range__toggle range__toggle__min"></div>
+                <div class="range__toggle range__toggle__max"></div>
+
+              </div>
+
+              <button class="btn__price" type="submit">Паказать</button>
+
+          </div>
         </form>
         </div>
 
@@ -85,11 +84,11 @@
           <li class="search__var"><a href="#" class="search__result__link">По рейтингу</a></li>
         </ul>
         <div>
-        <a href="#" class="scroll__hotels"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <a href="#" class="scroll__hotels"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
         <polygon points="5.5,0 0,10 11,10 "/>
       </svg><span class="visually-hidden">Прокрутка по возростания</span></a>
-        <a href="#" class="scroll__hotels"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <a href="#" class="scroll__hotels"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
         <polyline points="5.5,10 0,0 11,0 "/>
       </svg><span class="visually-hidden">Прокрутка по убыванию</span></a>
