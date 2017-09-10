@@ -9,11 +9,13 @@
   <body>
     <header class="main__header">
       <div class="container">
+        <div class="logo">
+          <img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона">
+        </div>
       <nav class="main__navigation">
         <ul class="main__navigation__list">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и Видео</a></li>
-          <li><a href="index.html"><img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона"><span class="visually-hidden">Переход на стартовую страницу</span></a></li>
           <li><a href="#">Карта Штата</a></li>
           <li class="main__navigation__current"><a>Гостиницы</a></li>
         </ul>
@@ -76,100 +78,122 @@
       <div class="search__result">
         <span class="found">Найдено 3:</span>
         <span class="sort">Сортировка:</span>
+        <div class="search__result__wrapper">
         <ul class="search__result__parameters">
           <li class="search__var"><a href="#" class="search__result__link--active">По цене</a></li>
           <li class="search__var"><a href="#" class="search__result__link">По типу</a></li>
           <li class="search__var"><a href="#" class="search__result__link">По рейтингу</a></li>
         </ul>
-
+        <div>
         <a href="#" class="scroll__hotels"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
         <polygon points="5.5,0 0,10 11,10 "/>
-        </svg><span class="visually-hidden">Прокрутка по списку отелей вверх</span></a>
+      </svg><span class="visually-hidden">Прокрутка по возростания</span></a>
         <a href="#" class="scroll__hotels"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
         <polyline points="5.5,10 0,0 11,0 "/>
-        </svg><span class="visually-hidden">Прокрутка по списку отелей вниз</span></a>
+      </svg><span class="visually-hidden">Прокрутка по убыванию</span></a>
+        </div>
+        </div>
       </div>
 
       <div class="list">
-      <div class="hotel">
-        <div class="hotel__photo">
-          <img src="img/Amara__resort__and__spa.jpg" alt="Amara resort and spa" width="135" height="90">
+        <div class="hotel">
+          <div class="hotel__flex">
+            <div class="hotel__photo">
+              <img src="img/Amara__resort__and__spa.jpg" alt="Amara resort and spa" width="135" height="90">
+            </div>
+            <div class="hotel__description">
+                <div class="hotel__block">
+                  <p class="hotel__name"><a href="#">Amara resort & spa</a></p>
+                  <div class="hotel__description_full">
+                    <span class="kind__hotels">Гостиница</span>
+                    <span class="price">от 4000 Р.</span>
+                  </div>
+                  <div class="hotel__description_full">
+                    <div class="blue__button">
+                      <a href="#" class="blue_link">Подробнее</a>
+                    </div>
+                    <div class="brown__button">
+                    <a href="#" class="brown_link">Забронировать</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="hotel__tophotels">
+                  <div class="hotel__star">
+                  <span class="visually-hidden">количество звезд</span>
+                  <img src="img/star.svg" alt="*" width="18" height="17">
+                  <img src="img/star.svg" alt="*" width="18" height="17">
+                  <img src="img/star.svg" alt="*" width="18" height="17">
+                  <img src="img/star.svg" alt="*" width="18" height="17">
+                  </div>
+                  <div class="hotel__rating">
+                    Рейтинг: 8,5
+                  </div>
+                </div>
+            </div>
+          </div>
         </div>
-        <div class="hotel__description">
-          <p class="hotel__name"><a href="#">Amara resort & spa</a></p>
-          <div class="hotel__description_full">
-            <span class="kind__hotels">Гостиница</span>
-            <a href="#" class="blue_link">Подробнее</a>
-          </div>
-          <div class="hotel__description_full">
-            <span class="price">от 3500 Р.</span>
-            <a href="#" class="brown_link">Забронировать</a>
-          </div>
-        </div>
-        <div class="hotel__tophotels">
-          <div class="hotel__star">
-            Звезда
-            <img src="img/star.svg" alt="*" width="18" height="17">
-          </div>
-          <div class="hotel__rating">
-            Рейтинг:8,5
-          </div>
-        </div>
-      </div>
 
-      <div class="hotel">
-        <div class="hotel__photo">
-          <img src="img/Desert__Quail__INN.jpg" alt="Amara resort & spa" width="135" height="90">
+        <div class="hotel">
+          <div class="hotel__flex">
+            <div class="hotel__photo">
+              <img src="img/Desert__Quail__INN.jpg" alt="Desert Quail INN" width="135" height="90">
+            </div>
+            <div class="hotel__description">
+                <div class="hotel__block">
+                  <p class="hotel__name"><a href="#">Desert Quail INN</a></p>
+                  <div class="hotel__description_full">
+                    <span class="kind__hotels">Мотель</span>
+                    <span class="price">от 3000 Р.</span>
+                  </div>
+                  <div class="hotel__description_full">
+                    <a href="#" class="blue_link">Подробнее</a>
+                    <a href="#" class="brown_link">Забронировать</a>
+                  </div>
+                </div>
+                <div class="hotel__tophotels">
+                  <div class="hotel__star">
+                    Звезда
+                  <img src="img/star.svg" alt="*" width="18" height="17">
+                  </div>
+                  <div class="hotel__rating">
+                    Рейтинг:8,9
+                  </div>
+                </div>
+            </div>
+          </div>
         </div>
-        <div class="hotel__description">
-          <p class="hotel__name"><a href="#">Desert Quail INN</a></p>
-          <div class="hotel__description_full">
-            <span class="kind__hotels">Мотель</span>
-            <a href="#" class="blue_link">Подробнее</a>
-          </div>
-          <div class="hotel__description_full">
-            <span class="price">от 2000 Р.</span>
-            <a href="#" class="brown_link">Забронировать</a>
-          </div>
-        </div>
-        <div class="hotel__tophotels">
-          <div class="hotel__star">
-            Звезда
-            <img src="img/star.svg" alt="*" width="18" height="17">
-          </div>
-          <div class="hotel__rating">
-            Рейтинг:9,2
-          </div>
-        </div>
-      </div>
 
-      <div class="hotel">
-        <div class="hotel__photo">
-          <img src="img/Villas__at__poco__diablo.jpg" alt="Amara resort & spa" width="135" height="90">
+        <div class="hotel">
+          <div class="hotel__flex">
+            <div class="hotel__photo">
+              <img src="img/Villas__at__poco__diablo.jpg" alt="Villas at poco diablo" width="135" height="90">
+            </div>
+            <div class="hotel__description">
+                <div class="hotel__block">
+                  <p class="hotel__name"><a href="#">Villas at poco diablo</a></p>
+                  <div class="hotel__description_full">
+                    <span class="kind__hotels">Апартаменты</span>
+                    <span class="price">от 2000 Р.</span>
+                  </div>
+                  <div class="hotel__description_full">
+                    <a href="#" class="blue_link">Подробнее</a>
+                    <a href="#" class="brown_link">Забронировать</a>
+                  </div>
+                </div>
+                <div class="hotel__tophotels">
+                  <div class="hotel__star">
+                    Звезда
+                  <img src="img/star.svg" alt="*" width="18" height="17">
+                  </div>
+                  <div class="hotel__rating">
+                    Рейтинг:9,2
+                  </div>
+                </div>
+            </div>
+          </div>
         </div>
-        <div class="hotel__description">
-          <p class="hotel__name"><a href="#">Villas at poco diablo</a></p>
-          <div class="hotel__description_full">
-            <span class="kind__hotels">Апартаменты</span>
-            <a href="#" class="blue_link">Подробнее</a>
-          </div>
-          <div class="hotel__description_full">
-            <span class="price">от 4000 Р.</span>
-            <a href="#" class="brown_link">Забронировать</a>
-          </div>
-        </div>
-        <div class="hotel__tophotels">
-          <div class="hotel__star">
-            Звезда
-            <img src="img/star.svg" alt="*" width="18" height="17">
-          </div>
-          <div class="hotel__rating">
-            Рейтинг:8,5
-          </div>
-        </div>
-      </div>
     </div>
     </div>
     </main>
