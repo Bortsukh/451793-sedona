@@ -324,7 +324,7 @@ body{
   text-transform: uppercase;
   width:570px;
   padding:55px;
-  background-color: #cecece;
+  background-color: #fff;
   margin: 0 auto;
   position:absolute;
   left:0;
@@ -506,10 +506,10 @@ input.quantity__field{
   margin-bottom: -130px;
 }
 
-
 .sedona__footer .container{
   display: flex;
 }
+
 
 .hashtag{
   width: 33.333333%;
@@ -608,7 +608,8 @@ input.quantity__field{
   font-size: 16px;
   color: #fff;
   text-transform: uppercase;
-  padding-top: 28px;
+  padding-top: 26px;
+  margin-bottom: 19px;
 }
 
 .filter__column{
@@ -622,18 +623,18 @@ input.quantity__field{
 }
 
 .filter__column:nth-child(1){
-  padding-left: 73px;
+  padding-left: 70px;
 }
 
 .filter__column:nth-child(even){
-  padding-left: 15px;
+  padding-left: 21px;
 }
 
 .filter__column label{
  position: relative;
  padding-left: 40px;
- margin-top: 30px;
- margin-bottom: 30px;
+ margin-top: 0;
+ margin-bottom: 25px;
 }
 .filter__column label::before{
  position: absolute;
@@ -650,8 +651,8 @@ input.quantity__field{
  position: absolute;
  content: '';
  display: block;
- left: 0;
- top: 0;
+ left: 3px;
+ top: -2px;
  width: 23px;
  height: 23px;
  background: url("../img/checkbox-on.png") right center no-repeat;
@@ -667,14 +668,15 @@ input.quantity__field{
 
 .filter__range{
   font-family: 'PT Sans', sans-serif;
-  width: 330px;
-  margin:50px auto;
+  width: 317px;
+  margin-top: 26px;
+  margin-left: 202px;
   color:#fff;
   text-transform: uppercase;
 }
 
 .filter__range__title {
-  margin-bottom: 9px;
+  margin-bottom: 11px;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -709,11 +711,18 @@ input.quantity__field{
   cursor: pointer;
 }
 
-.price__controls .min__price,
-.price__controls .max__price {
-  /*width: 90px;*/
+.price__controls{
+  max-width: 320px;
+}
+
+.price__controls .min__price{
   padding-left: 65px;
 }
+
+.price__controls .max__price{
+  padding-left: 80px;
+}
+
 
 .price__controls input {
   width: 50px;
@@ -727,6 +736,7 @@ input.quantity__field{
 .range__controls {
   position: relative;
   margin-bottom: 32px;
+  max-width: 320px;
 }
 
 .range__controls .scale {
@@ -767,7 +777,10 @@ input.quantity__field{
 .btn__price {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding-top:6px;
+  padding-bottom: 6px;
+
+  width: 135px;
 
   font-size: 14px;
   line-height: 20px;
@@ -867,9 +880,10 @@ a.search__result__link--active{
 .search__result{
   display: flex;
   align-items: center;
-  padding-top: 32px;
+  padding-top: 22px;
   padding-left: 72px;
   padding-right: 72px;
+  padding-bottom: 12px;
 }
 
 .list{
@@ -878,7 +892,7 @@ a.search__result__link--active{
 }
 
 .hotel{
-  padding-top: 30px;
+  padding-top: 27px;
   padding-bottom: 30px;
   border-top:1px solid #e5e5e5;
 }
