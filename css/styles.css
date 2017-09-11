@@ -8,9 +8,21 @@ html{
   box-sizing: inherit;
 }
 
+body{
+  background-color: #f2f2f2;
+  min-width: 1200px;
+}
+
 .container{
   width:1200px;
   margin:0 auto;
+}
+
+.container__max{
+  width: 1200px;
+  margin:0 auto;
+  background-color: #fff;
+  box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
 .mainReason--normal{
@@ -84,7 +96,10 @@ html{
 
 .reason__wrapper{
   max-width: 490px;
-  margin:60px auto;
+  margin-top: 58px;
+  margin-bottom: 51px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
@@ -95,8 +110,9 @@ html{
   font-size: 21px;
   color: #000;
   text-transform: uppercase;
-  margin-bottom:40px;
+  margin-bottom:27px;
 }
+
 .reasons__list{
   display: flex;
   flex-wrap: wrap;
@@ -115,8 +131,8 @@ html{
   background-color: rgb(129,179,210);
   padding-left:45px;
   padding-right:45px;
-  padding-top:50px;
-  padding-bottom:50px;
+  padding-top:30px;
+  padding-bottom:58px;
   text-align: center;
 }
 
@@ -141,6 +157,12 @@ html{
   text-transform: uppercase;
 }
 
+.mainReason__blue h2{
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 23px;
+}
+
 .reason__number{
   font-family: 'PT Sans', sans-serif;
   line-height: 21px;
@@ -158,11 +180,14 @@ html{
   max-width: 280px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 21px;
+  margin-bottom: 0;
 }
+
 
 .reason__opportunity{
   padding-top: 60px;
-  padding-bottom: 85px;
+  padding-bottom: 64px;
   padding-left: 48px;
   padding-right: 48px;
   text-align: center;
@@ -185,11 +210,16 @@ html{
   text-transform: uppercase;
 }
 
+.small__blocks p,
+.small__blocks h2{
+  margin-top: 25px;
+}
+
 .reason__greycolor{
   padding-left: 42px;
   padding-right: 44px;
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding-top: 22px;
+  padding-bottom: 55px;
   text-align: center;
   background-color: #eee;
 }
@@ -203,6 +233,13 @@ html{
   text-transform: uppercase;
 }
 
+.reason__greycolor h2{
+  max-width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
 .reason__number--greycolor,
 .reason__explanation--grey{
   font-family: 'PT Sans', sans-serif;
@@ -214,8 +251,12 @@ html{
 
 .booking__wrapper{
   max-width: 436px;
-  margin: 57px auto 50px auto;
+  margin: 50px auto 47px auto;
   text-align: center;
+}
+
+.booking__wrapper h2{
+  margin-bottom: 25px;
 }
 
 .booking__name{
@@ -241,7 +282,7 @@ html{
   min-height: 86px;
   background-color:#766357;
   margin: auto;
-  padding-top: 32px;
+  padding-top: 30px;
   text-align: center;
 }
 
@@ -423,8 +464,8 @@ input.quantity__field{
 }
 
 .children label{
-  margin-left: 30px;
-  margin-right:44px;
+  margin-left: 50px;
+  margin-right:24px;
 }
 
 /*.booking__form__string2 label:nth-child(2){
@@ -460,6 +501,11 @@ input.quantity__field{
   background-color: #5496bc;
   color:rgba(255, 255, 255, 0.3);
 }
+
+.map{
+  margin-bottom: -130px;
+}
+
 
 .sedona__footer .container{
   display: flex;
@@ -696,9 +742,9 @@ input.quantity__field{
 
 .range__toggle {
   position: absolute;
-  top: -7px;
-  width: 4px;
-  height: 4px;
+  top: -8px;
+  width: 20px;
+  height: 20px;
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -832,8 +878,13 @@ a.search__result__link--active{
 }
 
 .hotel{
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top:1px solid #e5e5e5;
+}
+
+.hotel:last-child{
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel__flex{
