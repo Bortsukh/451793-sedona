@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>sedona</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <div class="container__max">
@@ -151,7 +151,7 @@
         <div class="booking__link">
         <a href="search.html" class="booking__search">Поиск гостиницы в седоне</a>
         </div>
-        <form class="booking__form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="booking__form modal__show" action="https://echo.htmlacademy.ru" method="post">
           <h3 class="visually-hidden">Заполните форму, пожалуйста</h3>
           <fieldset class="booking__form__string define__date">
             <label class="booking__form__label" for="from"><span>Дата заезда:</span>
@@ -210,13 +210,13 @@
             <div class="booking__form__string2">
               <label class="booking__form__label" for="quantity1">Взрослые:</label>
               <div class="quantity">
-                <button class="sign">-</button><input class="quantity__field" type="text" id="quantity1" name="adults" placeholder="2" required><button class="sign">+</button>
+                <button class="sign">-</button><input class="quantity__field" type="text" id="quantity1" name="adults" placeholder="2"><button class="sign">+</button>
               </div>
             </div>
           <div class="booking__form__string2 children">
             <label class="booking__form__label" for="quantity2">Дети:</label>
             <div class="quantity">
-              <button class="sign">-</button><input class="quantity__field" type="text" id="quantity2" name="children" placeholder="0" required><button class="sign">+</button>
+              <button class="sign">-</button><input class="quantity__field" type="text" id="quantity2" name="children" placeholder="0"><button class="sign">+</button>
             </div>
           </div>
         </div>
@@ -261,4 +261,36 @@
       </div>
     </footer>
     </div>
+    <script type="text/javascript">
+       var link = document.querySelector(".booking__search");
+
+       var popup = document.querySelector(".booking__form");
+
+       var form = popup.querySelector("form");
+
+       var from = popup.querySelector("[name=from]");
+
+       var to = popup.querySelector("[name=to]");
+
+       var adult = popup.querySelector("[name=adult]");
+
+       var children = popup.querySelector("[name=children]");
+
+       link.addEventListener("click", function (evt) {
+         evt.preventDefault();
+         popup.classList.toggle("modal__show");
+       });
+
+        form.addEventListener("submit", function (evt) {
+          if (!from.value || !to.value || !adult.value || !children.value ) {
+            evt.preventDefault();
+            console.log("Нужно выбрать дату и кол-во людей");
+          } else {
+            form.submit();
+          }
+        });
+
+    </script>
+
     </body>
+    </html>

@@ -297,10 +297,8 @@ p.reason__explanation--grey {
 
 .booking__link {
     width: 570px;
-    min-height: 86px;
     background-color: #766357;
     margin: auto;
-    padding-top: 30px;
     text-align: center;
 }
 
@@ -320,6 +318,9 @@ p.reason__explanation--grey {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
+    display: block;
+    min-height: 86px;
+    padding: 30px 10px;
 }
 
 .booking__search:hover {
@@ -349,6 +350,7 @@ p.reason__explanation--grey {
     left: 0;
     right: 0;
     top: 100%;
+    display: none;
 }
 
 .booking__form__string {
@@ -407,6 +409,7 @@ p.reason__explanation--grey {
 
 .booking__form__field:focus {
     background-color: #fff;
+    outline:2px solid #f2f2f2;
 }
 
 .booking__form__field::-webkit-input-placeholder {
@@ -427,10 +430,20 @@ p.reason__explanation--grey {
     text-transform: uppercase;
 }
 
+.booking__form__field::-moz-placeholder {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: bold;
+    line-height: 36px;
+    font-size: 14px;
+    color: #000;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
 .booking__form__field::placeholder {
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: bold;
-    line-height: 26px;
+    line-height: 36px;
     font-size: 14px;
     color: #000;
     text-transform: uppercase;
@@ -475,14 +488,22 @@ input.quantity__field {
 
 .quantity__field::-webkit-input-placeholder {
     color: #000;
+    opacity: 1;
 }
 
 .quantity__field:-ms-input-placeholder {
     color: #000;
+    opacity: 1;
+}
+
+.quantity__field::-moz-placeholder{
+    color: #000;
+    opacity: 1;
 }
 
 .quantity__field::placeholder {
     color: #000;
+    opacity: 1;
 }
 
 .sign {
@@ -495,8 +516,6 @@ input.quantity__field {
     color: #a9a9a9;
     border: none;
 }
-
-/* как задать првильный размер + и -*/
 
 .sign:hover {
     color: #000;
@@ -515,14 +534,6 @@ input.quantity__field {
     margin-right: 24px;
 }
 
-/*.booking__form__string2 label:nth-child(2){
-  margin-left: 52px;
-}
-
-/*.booking__form__string2:nth-child(2) .booking__form__label{
-   width: 65px
-}
-*/
 .booking__button {
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: bold;
@@ -672,17 +683,6 @@ input.quantity__field {
     margin-right: 8px;
 }
 
-
-
-
-
-
-
-
-
-
-/*стили для второй страницы*/
-
 .filter__column legend {
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: bold;
@@ -742,10 +742,6 @@ input.quantity__field {
     background: url("../img/checkbox-on.png") right center no-repeat;
 }
 
-/*.filter__column.price__adjusting{
-  width: 50%;
-}
-*/
 .filter__column label {
     display: block;
 }
@@ -1145,4 +1141,8 @@ a.search__result__link--active {
 
 input.visually-hidden:focus + label{
  opacity: 0.5;
+}
+
+.modal__show{
+  display: block;
 }
