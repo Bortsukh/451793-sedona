@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>sedona</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body>
     <div class="container__max">
@@ -210,7 +210,7 @@
             <div class="booking__form__string2">
               <label class="booking__form__label" for="quantity1">Взрослые:</label>
               <div class="quantity">
-                <button class="sign">-</button><input class="quantity__field" type="text" id="quantity1" name="adults" placeholder="2"><button class="sign">+</button>
+                <button class="sign">-</button><input class="quantity__field" type="text" id="quantity1" name="adult" placeholder="2"><button class="sign">+</button>
               </div>
             </div>
           <div class="booking__form__string2 children">
@@ -231,6 +231,7 @@
         <h3 class="visually-hidden">Как добраться</h3>
         <div class="map__struckture visually-hidden">Карта</div>
         <img src="img/map.jpg" width="1200" height="594" alt="Map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.1805059829!2d-111.83015803238301!3d34.854373381022214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1505494713170" height="594" allowfullscreen></iframe>
       </div>
       </section>
 
@@ -261,36 +262,6 @@
       </div>
     </footer>
     </div>
-    <script type="text/javascript">
-       var link = document.querySelector(".booking__search");
-
-       var popup = document.querySelector(".booking__form");
-
-       var form = popup.querySelector("form");
-
-       var from = popup.querySelector("[name=from]");
-
-       var to = popup.querySelector("[name=to]");
-
-       var adult = popup.querySelector("[name=adult]");
-
-       var children = popup.querySelector("[name=children]");
-
-       link.addEventListener("click", function (evt) {
-         evt.preventDefault();
-         popup.classList.toggle("modal__show");
-       });
-
-        form.addEventListener("submit", function (evt) {
-          if (!from.value || !to.value || !adult.value || !children.value ) {
-            evt.preventDefault();
-            console.log("Нужно выбрать дату и кол-во людей");
-          } else {
-            form.submit();
-          }
-        });
-
-    </script>
-
+    <script src="js/scripts.min.js"></script>
     </body>
     </html>

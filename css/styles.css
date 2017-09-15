@@ -350,7 +350,13 @@ p.reason__explanation--grey {
     left: 0;
     right: 0;
     top: 100%;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    z-index: 1;
 }
 
 .booking__form__string {
@@ -409,7 +415,7 @@ p.reason__explanation--grey {
 
 .booking__form__field:focus {
     background-color: #fff;
-    outline:2px solid #f2f2f2;
+    outline: 2px solid #f2f2f2;
 }
 
 .booking__form__field::-webkit-input-placeholder {
@@ -496,11 +502,6 @@ input.quantity__field {
     opacity: 1;
 }
 
-.quantity__field::-moz-placeholder{
-    color: #000;
-    opacity: 1;
-}
-
 .quantity__field::placeholder {
     color: #000;
     opacity: 1;
@@ -563,6 +564,15 @@ input.quantity__field {
 
 .map {
     margin-bottom: -128px;
+    position: relative;
+}
+
+.map iframe {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 0;
 }
 
 .sedona__footer .container {
@@ -580,7 +590,6 @@ input.quantity__field {
 .hashtag {
     width: 33.333333%;
     text-align: center;
-    background-color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -606,7 +615,6 @@ input.quantity__field {
     width: 33.333333%;
     text-align: center;
     margin: auto;
-    background-color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -898,7 +906,7 @@ input.quantity__field {
 
 ul.search__result__parameters {
     display: inline;
-    padding:0;
+    padding: 0;
 }
 
 .search__result__parameters li {
@@ -1139,10 +1147,52 @@ a.search__result__link--active {
     margin: -1px;
 }
 
-input.visually-hidden:focus + label{
- opacity: 0.5;
+input.visually-hidden:focus + label {
+    opacity: 0.5;
 }
 
-.modal__show{
-  display: block;
+.modal__show {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+input.input__error {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.error {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+}
+
+@-webkit-keyframes shake {
+    0%,50%,100% {
+        left: 0
+    }
+
+    25% {
+        left: 20px
+    }
+
+    75% {
+        left: -20px
+    }
+}
+
+@keyframes shake {
+    0%,50%,100% {
+        left: 0
+    }
+
+    25% {
+        left: 20px
+    }
+
+    75% {
+        left: -20px
+    }
 }
