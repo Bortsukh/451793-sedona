@@ -6,8 +6,8 @@ var adult = popup.querySelector("[name=adult]");
 var children = popup.querySelector("[name=children]");
 
 link.addEventListener("click", function (evt) {
- evt.preventDefault();
- popup.classList.toggle("modal__show");
+  evt.preventDefault();
+  popup.classList.toggle("modal__show");
 });
 
 popup.addEventListener("submit", function (evt) {
