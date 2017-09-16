@@ -21,18 +21,18 @@ popup.addEventListener("submit", function (evt) {
     children.classList.remove("input__error");
     popup.classList.add("error");
     if(!from.value){
-       from.classList.add("input__error")
-     }
+      from.classList.add("input__error");
+    };
     if(!to.value){
-       to.classList.add("input__error")
-     }
+      to.classList.add("input__error");
+    };
     if(!adult.value){
-       adult.classList.add("input__error")
-     }
+      adult.classList.add("input__error");
+    };
     if(!children.value){
-       children.classList.add("input__error")
-     }
+      children.classList.add("input__error");
+    };
   } else {
     popup.submit();
-    }
+  };
 });
